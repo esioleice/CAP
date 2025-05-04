@@ -29,9 +29,9 @@ public class BMICalculator extends JFrame {
                 }
 
                 try {
-                    int age = Integer.parseInt(tfAge.getText());
-                    double height = Double.parseDouble(tfHeight.getText());
-                    double weight = Double.parseDouble(tfWeight.getText());
+                    int age = Integer.parseInt(tfAge.getText().trim());
+                    double height = Double.parseDouble(tfHeight.getText().trim());
+                    double weight = Double.parseDouble(tfWeight.getText().trim());
 
                     double heightInMeters = height / 100;
                     double bmi = weight / (heightInMeters * heightInMeters);
@@ -65,6 +65,7 @@ public class BMICalculator extends JFrame {
         frame.setContentPane(frame.pnlMain);
         frame.setTitle("BMI Calculator");
         frame.setSize(450, 450);
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
