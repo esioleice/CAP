@@ -22,7 +22,6 @@ public class BMICalculator extends JFrame {
                 String name = tfName.getText();
                 String gender = "Not selected";
 
-                // get selected gender
                 for (int i = 0; i < rbGenders.length; i++) {
                     if (rbGenders[i].isSelected()) {
                         gender = genderLabels[i];
