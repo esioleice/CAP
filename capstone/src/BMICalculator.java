@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class BMICalculator extends JFrame {
     private JPanel pnlMain;
@@ -6,20 +8,69 @@ public class BMICalculator extends JFrame {
     private JTextField tfAge;
     private JTextField tfHeight;
     private JTextField tfWeight;
-    private JRadioButton rbMaleRadioButton;
+    private JRadioButton rbMale;
     private JRadioButton rbFemale;
     private JButton btnCalculate;
 
-    public BMICalculator() {
+    private JRadioButton[] rbGenders = {rbMale, rbFemale};
+    private String[] genderLabels = {"Male", "Female"};
 
+    public BMICalculator() {
+        btnCalculate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = tfName.getText();
+                String gender = "Not selected";
+
+                // get selected gender
+                for (int i = 0; i < rbGenders.length; i++) {
+                    if (rbGenders[i].isSelected()) {
+                        gender = genderLabels[i];
+                    }
+                }
+
+                try {
+                    int age = Integer.parseInt(tfAge.getText());
+                    double height = Double.parseDouble(tfHeight.getText());
+                    double weight = Double.parseDouble(tfWeight.getText());
+
+                    double heightInMeters = height / 100;
+                    double bmi = weight / (heightInMeters * heightInMeters);
+
+                    String status = "";
+
+                    if (bmi < 18.5) {
+                        status = "Underweight";
+                    } else if (bmi < 24.9) {
+                        status = "Normal weight";
+                    } else if (bmi < 29.9) {
+                        status = "Overweight";
+                    } else {
+                        status = "Obese";
+                    }
+
+                    String output = "Name: " + name +
+                            "\nAge: " + age +
+                            "\nGender: " + gender +
+                            "\nBMI: " + String.format("%.2f", bmi) +
+                            " (" + status + ")";
+
+                    JOptionPane.showMessageDialog(null, output);
+                    System.out.println(output);
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter valid numbers for age, height, and weight.");
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
-        BMICalculator app = new BMICalculator();
-        app.setContentPane(app.pnlMain);
-        app.setSize(400, 400);
-        app.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        app.setVisible(true);
+        BMICalculator frame = new BMICalculator();
+        frame.setContentPane(frame.pnlMain);
+        frame.setTitle("BMI Calculator");
+        frame.setSize(450, 450);
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
-
 }

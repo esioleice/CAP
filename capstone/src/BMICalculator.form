@@ -123,12 +123,12 @@
           <text value="Gender:"/>
         </properties>
       </component>
-      <component id="38964" class="javax.swing.JRadioButton" binding="rbMaleRadioButton" default-binding="true">
+      <component id="38964" class="javax.swing.JRadioButton" binding="rbMale">
         <constraints>
           <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="rbMale"/>
+          <text value="Male"/>
         </properties>
       </component>
       <component id="abb9c" class="javax.swing.JRadioButton" binding="rbFemale">
