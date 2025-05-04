@@ -12,8 +12,8 @@ public class BMICalculator extends JFrame {
     private JRadioButton rbFemale;
     private JButton btnCalculate;
 
-    private JRadioButton[] rbGenders = {rbMale, rbFemale};
-    private String[] genderLabels = {"Male", "Female"};
+    private final JRadioButton[] rbGenders = {rbMale, rbFemale};
+    private final String[] genderLabels = {"Male", "Female"};
 
     public BMICalculator() {
         btnCalculate.addActionListener(new ActionListener() {
@@ -37,7 +37,7 @@ public class BMICalculator extends JFrame {
                     double heightInMeters = height / 100;
                     double bmi = weight / (heightInMeters * heightInMeters);
 
-                    String status = "";
+                    String status;
 
                     if (bmi < 18.5) {
                         status = "Underweight";
