@@ -49,16 +49,12 @@ public class BMICalculator extends JFrame {
                         status = "Obese";
                     }
 
-                    String output = "Name: " + name +
-                            "\nAge: " + age +
-                            "\nGender: " + gender +
-                            "\nBMI: " + String.format("%.2f", bmi) +
-                            " (" + status + ")";
+                    String output = "Name: " + name + "\nAge: " + age +  "\nGender: " + gender +  "\nBMI: " + String.format("%.2f", bmi) +  " (" + status + ")";
 
                     JOptionPane.showMessageDialog(null, output);
                     System.out.println(output);
 
-                } catch (NumberFormatException ex) {
+                } catch (NumberFormatException ee) {
                     JOptionPane.showMessageDialog(null, "Please enter valid numbers for age, height, and weight.");
                 }
             }

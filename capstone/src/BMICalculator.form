@@ -128,6 +128,8 @@
           <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <enabled value="true"/>
+          <selected value="false"/>
           <text value="Male"/>
         </properties>
       </component>
@@ -136,6 +138,8 @@
           <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <enabled value="true"/>
+          <selected value="false"/>
           <text value="Female"/>
         </properties>
       </component>
@@ -149,4 +153,11 @@
       </component>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="38964"/>
+      <member id="38964"/>
+      <member id="abb9c"/>
+    </group>
+  </buttonGroups>
 </form>
