@@ -61,12 +61,12 @@ public class BMICalculator extends JFrame {
     }
 
     public static void main(String[] args) {
-        BMICalculator frame = new BMICalculator();
-        frame.setContentPane(frame.pnlMain);
-        frame.setTitle("BMI Calculator");
-        frame.setSize(450, 450);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setVisible(true);
+        BMICalculator app = new BMICalculator();
+        app.setContentPane(app.pnlMain);
+        app.setTitle("BMI Calculator");
+        app.setSize(450, 450);
+        app.setLocationRelativeTo(null);
+        app.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        app.setVisible(true);
     }
 }
