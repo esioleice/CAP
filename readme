@@ -10,7 +10,7 @@ Swing components such as `tfName`, `tfAge`, and `rbMale` are declared as private
 
 The class diagram provides users with a visual representation of the `BMICalculator` class, detailing its private fields, methods, and inheritance from `JFrame`. It effectively outlines the structure, relationships, and responsibilities within the code. This helps illustrate how the application is organized and how components interact.
 
-![Class Diagram](./diagram.png)
+![Class Diagram](./d8e2e201-8c70-4ebc-84d6-c4a55adf1b54.png)
 
 ## Four OOP Principles (35%)
 
