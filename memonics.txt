@@ -1,0 +1,11 @@
+q	q	s	s
+
+eq	dq	sp	ip
+inT	if0p	inT	ifStN-p
+if0-	if1-	inD	el-
+inFRT	inTqf	inN-st	inTS-t
+el-	qFRN	ST-t	St-stn
+qrnT	el-	sc+	inD-t-D
+qrT	qf-qfr	re	frT
+qc+	frT		sc-
+	qc-		reD

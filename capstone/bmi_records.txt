@@ -1,0 +1,32 @@
+Name: Prince Jason Capendit
+Age: 20
+Gender: Male
+Height: 170.0 meters
+Weight: 80.0 kg
+BMI: 0.00
+Status: Underweight
+------
+Name: Prince
+Age: 20
+Gender: Male
+Height: 170.0 meters
+Weight: 80.0 kg
+BMI: 0.00
+Status: Underweight
+------
+Name: Prince
+Age: 20
+Gender: Male
+Height: 170.0 meters
+Weight: 80.0 kg
+BMI: 0.00
+Status: Underweight
+------
+Name: Prince Capendit
+Age: 20
+Gender: Male
+Height: 170.0 cm
+Weight: 80.0 kg
+BMI: 27.68
+Status: Overweight
+------
